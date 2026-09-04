@@ -8,7 +8,6 @@ public:
     int majorityElement(vector<int>& nums) {
         int freq = 0, ans = 0;
 
-        // Find the candidate
         for (int i = 0; i < nums.size(); i++)
         {
             if (freq == 0)
@@ -26,7 +25,6 @@ public:
             }
         }
 
-        // Verify the candidate
         int count = 0;
 
         for (int val : nums)
